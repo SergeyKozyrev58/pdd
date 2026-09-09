@@ -75,7 +75,7 @@
     h1{font-size:clamp(46px,7vw,92px);max-width:820px;margin-bottom:26px}h2{font-size:clamp(36px,5vw,64px);margin-bottom:22px}h3{font-size:22px;margin-bottom:12px}
     .lead{font-size:clamp(18px,2vw,24px);color:#d4d9d5;max-width:760px}.muted{color:var(--muted)}
     .hero{min-height:calc(100vh - 76px);display:flex;align-items:center;padding:54px 0 80px}.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}.hero-copy{text-align:center}.hero-copy .lead{margin-inline:auto}
-    .hero-title-line{display:block}.hero-title-final{display:block;color:var(--lime);font-size:.48em;white-space:nowrap;letter-spacing:-.04em;margin-top:.16em}.hero-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:32px 0}
+    .hero-title-line{display:block}.hero-title-final{display:block;color:var(--lime);font-size:.48em;white-space:nowrap;letter-spacing:-.04em;margin-top:.16em}.hero-proof{display:inline-flex;align-items:center;justify-content:center;gap:14px;max-width:680px;margin:22px auto 0;padding:13px 18px;border:1px solid rgba(186,255,47,.32);border-radius:16px;background:rgba(186,255,47,.065);text-align:left}.hero-proof strong{flex:0 0 auto;color:var(--lime);font-size:21px;line-height:1}.hero-proof span{color:#e1e6e2;font-size:14px;line-height:1.35}.hero-proof a{color:var(--lime);font-weight:900;text-decoration:none}.hero-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:24px 0 10px}.hero-next{margin:0 auto 24px;color:var(--muted);font-size:13px}
     .facts{display:flex;gap:10px;flex-wrap:wrap}.hero-copy .facts{justify-content:center}.fact{padding:10px 13px;border:1px solid var(--line);border-radius:999px;color:#dce1dd;font-size:14px;background:rgba(255,255,255,.025)}
     .portrait{position:relative;aspect-ratio:4/5;max-height:690px;border-radius:32px;overflow:hidden;background:linear-gradient(145deg,#252b27,#111412);border:1px solid rgba(255,255,255,.14);box-shadow:0 36px 90px rgba(0,0,0,.42)}
     .portrait::before{content:"ФОТО ПРЕПОДАВАТЕЛЯ";position:absolute;inset:0;display:grid;place-items:center;color:#788079;font-size:12px;letter-spacing:.16em}
@@ -110,7 +110,7 @@
       .menu-btn{display:grid;place-items:center}.navlinks{position:absolute;left:20px;right:20px;top:68px;display:none;flex-direction:column;align-items:stretch;padding:18px;background:var(--panel);color:var(--text);border:1px solid var(--line);border-radius:18px;box-shadow:0 20px 45px rgba(0,0,0,.4)}.navlinks.open{display:flex}.navlinks a{padding:10px}.navlinks .btn{margin-top:4px}
     }
     @media(max-width:600px){
-      .container{width:min(calc(100% - 28px),var(--max))}.nav{height:68px}.brand{font-size:14px}.hero{padding-top:38px}.hero-grid{gap:32px}h1{font-size:44px}.lead{font-size:18px}.hero-actions .btn{width:100%}.portrait{aspect-ratio:4/5;border-radius:22px}.grid,.steps,.calm-steps{grid-template-columns:1fr}.card{min-height:240px}.card-num{margin-bottom:24px}.result-box{border-radius:22px}.result-box::after{display:none}.result-main{gap:24px}.result-number{font-size:48px}.result-rate{min-width:0;width:100%;max-width:290px}.result-period{font-size:16px}.format-strip{grid-template-columns:1fr}.format-strip div,.format-strip div:nth-child(2n){border-right:0;border-bottom:1px solid var(--line)}.format-strip div:last-child{grid-column:auto;border-bottom:0}.video-box,.final-box,.calm-shell{border-radius:22px}.ticket .big{font-size:60px}.calm-panel{padding:17px}.calm-shift{grid-template-columns:1fr}.calm-arrow{transform:rotate(90deg);text-align:center}.calm-bottom .btn{width:100%}.contact-buttons{grid-template-columns:1fr}.contact-button{padding:15px}.footer-row{align-items:flex-start}.disclaimer{text-align:left}.to-top{right:14px;bottom:14px}
+      .container{width:min(calc(100% - 28px),var(--max))}.nav{height:68px}.brand{font-size:14px}.hero{padding-top:32px}.hero-grid{gap:28px}h1{font-size:44px}.lead{font-size:18px}.hero-proof{display:flex;align-items:flex-start;flex-direction:column;gap:7px;margin-top:18px;text-align:left}.hero-proof strong{font-size:23px}.hero-actions .btn{width:100%}.hero-next{max-width:320px}.portrait{aspect-ratio:4/5;border-radius:22px}.grid,.steps,.calm-steps{grid-template-columns:1fr}.card{min-height:240px}.card-num{margin-bottom:24px}.result-box{border-radius:22px}.result-box::after{display:none}.result-main{gap:24px}.result-number{font-size:48px}.result-rate{min-width:0;width:100%;max-width:290px}.result-period{font-size:16px}.format-strip{grid-template-columns:1fr}.format-strip div,.format-strip div:nth-child(2n){border-right:0;border-bottom:1px solid var(--line)}.format-strip div:last-child{grid-column:auto;border-bottom:0}.video-box,.final-box,.calm-shell{border-radius:22px}.ticket .big{font-size:60px}.calm-panel{padding:17px}.calm-shift{grid-template-columns:1fr}.calm-arrow{transform:rotate(90deg);text-align:center}.calm-bottom .btn{width:100%}.contact-buttons{grid-template-columns:1fr}.contact-button{padding:15px}.footer-row{align-items:flex-start}.disclaimer{text-align:left}.to-top{right:14px;bottom:14px}
     }
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
   </style>
@@ -123,7 +123,7 @@
       <button class="menu-btn" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="navlinks">☰</button>
       <nav class="navlinks" id="navlinks" aria-label="Основная навигация">
         <a href="#for-whom">Кому подходит</a><a href="#method">Методика</a><a href="#exam-calm">Уверенность</a><a href="#about">Обо мне</a>
-        <a class="btn" href="https://t.me/pddsensey" target="_blank" rel="noopener" data-goal="telegram_click">Записаться</a>
+        <a class="btn" href="https://t.me/pddsensey?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%AF%20%D1%81%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0%20%D1%80%D0%B5%D0%BF%D0%B5%D1%82%D0%B8%D1%82%D0%BE%D1%80%D0%BF%D0%B4%D0%B4.%D1%80%D1%84.%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BE%20%D0%BF%D0%BE%D0%B4%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%BA%D0%B5%20%D0%BA%20%D1%82%D0%B5%D0%BE%D1%80%D0%B8%D0%B8%20%D0%9F%D0%94%D0%94." target="_blank" rel="noopener" data-goal="telegram_click">Написать</a>
       </nav>
     </div>
   </header>
@@ -132,23 +132,25 @@
     <section class="hero" id="top">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow">Онлайн по всей России</p>
+          <p class="eyebrow">Репетитор по теории ПДД · онлайн по всей России</p>
           <h1>
             <span class="hero-title-line">Теория ПДД</span>
             <span class="hero-title-final">с пониманием и уверенностью</span>
           </h1>
-          <p class="lead">Подготовка к теоретическому экзамену в ГИБДД онлайн по всей России</p>
+          <p class="lead">Подготовка с нуля, после неудачной попытки или при большом числе ошибок. Объясняю логику правил без механической зубрёжки.</p>
+          <div class="hero-proof"><strong>275 учеников</strong><span>сдали теорию с первого раза с января по август 2026 года<a href="#result-note" aria-label="Перейти к пояснению">*</a></span></div>
           <div class="hero-actions">
-            <a class="btn" href="https://t.me/pddsensey" target="_blank" rel="noopener" data-goal="telegram_click">Записаться на подготовку</a>
+            <a class="btn" href="https://t.me/pddsensey?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%AF%20%D1%81%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0%20%D1%80%D0%B5%D0%BF%D0%B5%D1%82%D0%B8%D1%82%D0%BE%D1%80%D0%BF%D0%B4%D0%B4.%D1%80%D1%84.%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BE%20%D0%BF%D0%BE%D0%B4%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%BA%D0%B5%20%D0%BA%20%D1%82%D0%B5%D0%BE%D1%80%D0%B8%D0%B8%20%D0%9F%D0%94%D0%94." target="_blank" rel="noopener" data-goal="telegram_click">Написать Сергею в Telegram</a>
             <a class="btn secondary" href="tel:+79991940480" data-goal="phone_click">Позвонить</a>
           </div>
+          <p class="hero-next">Откроется Telegram с готовым сообщением — останется только отправить его.</p>
           <div class="facts" aria-label="Ключевые факты">
-            <span class="fact">16 лет опыта</span><span class="fact">Преподаватель автошкол Москвы и Санкт-Петербурга</span><span class="fact">Индивидуальные и групповые занятия</span><span class="fact">Автор собственной методики обучения</span>
+            <span class="fact">16 лет опыта</span><span class="fact">Занятие 60 минут</span><span class="fact">Обычно до 6 занятий</span><span class="fact">Индивидуальные и групповые занятия</span><span class="fact">Домашние задания</span>
           </div>
         </div>
         <div class="portrait">
           <!-- Поместите фотографию преподавателя teacher.jpg в одну папку с index.html -->
-          <img src="teacher.jpg" alt="Козырев Сергей Александрович — репетитор по теории ПДД" onerror="this.style.display='none'">
+          <img src="teacher.jpg" width="1122" height="1402" alt="Козырев Сергей Александрович — репетитор по теории ПДД" decoding="async" fetchpriority="high" onerror="this.style.display='none'">
           <div class="portrait-note"><strong>Козырев Сергей Александрович</strong><span>Репетитор по теории ПДД</span></div>
         </div>
       </div>
@@ -226,7 +228,7 @@
 
           <div class="calm-bottom">
             <p class="calm-disclaimer">Подготовка касается только экзаменационной ситуации, снижения волнения и сохранения уверенности в знаниях. Она не является психологической, психотерапевтической или медицинской помощью.</p>
-            <a class="btn" href="https://t.me/pddsensey" target="_blank" rel="noopener" data-goal="telegram_click">Узнать о подготовке</a>
+            <a class="btn" href="https://t.me/pddsensey?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%AF%20%D1%81%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0%20%D1%80%D0%B5%D0%BF%D0%B5%D1%82%D0%B8%D1%82%D0%BE%D1%80%D0%BF%D0%B4%D0%B4.%D1%80%D1%84.%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BE%20%D0%BF%D0%BE%D0%B4%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%BA%D0%B5%20%D0%BA%20%D1%82%D0%B5%D0%BE%D1%80%D0%B8%D0%B8%20%D0%9F%D0%94%D0%94." target="_blank" rel="noopener" data-goal="telegram_click">Написать о подготовке</a>
           </div>
         </div>
       </div>
@@ -250,7 +252,7 @@
           <ul class="checks"><li>Закрытый Telegram-канал</li><li>Видеоразбор всех 800 экзаменационных вопросов</li><li>Распределение материала по темам</li><li>Самостоятельное обучение в удобном темпе</li></ul>
           <p class="price">3 000 ₽</p><a class="btn" href="https://t.me/pddsensey?text=%D0%A0%D0%B0%D1%81%D1%81%D0%BA%D0%B0%D0%B6%D0%B8%D1%82%D0%B5%20%D0%BE%20%D1%80%D0%B0%D0%B7%D0%B1%D0%BE%D1%80%D0%B5" target="_blank" rel="noopener" data-goal="video_info_click">Узнать о видеоразборе</a>
         </div>
-        <div class="ticket"><div class="ticket-top"><span>ТЕОРИЯ ПДД</span><span>ВИДЕОРАЗБОР</span></div><div class="big">800</div><h3>экзаменационных вопросов</h3><p class="muted">По темам. С подробным объяснением логики каждого ответа.</p><p class="video-fragment-label">Фрагмент видеоразбора</p><div class="video-cover"><video controls playsinline preload="metadata" poster="video-review-cover.jpg" aria-label="Фрагмент авторского видеоразбора ПДД: движение через железнодорожные пути"><source src="video-review-fragment.mp4" type="video/mp4"><source src="https://github.com/SergeyKozyrev58/pdd/releases/download/v1.0/video-review-fragment.mp4" type="video/mp4">Ваш браузер не поддерживает воспроизведение видео.</video></div></div>
+        <div class="ticket"><div class="ticket-top"><span>ТЕОРИЯ ПДД</span><span>ВИДЕОРАЗБОР</span></div><div class="big">800</div><h3>экзаменационных вопросов</h3><p class="muted">По темам. С подробным объяснением логики каждого ответа.</p><p class="video-fragment-label">Фрагмент видеоразбора</p><div class="video-cover"><video controls playsinline preload="none" poster="video-review-cover.jpg" aria-label="Фрагмент авторского видеоразбора ПДД: движение через железнодорожные пути"><source src="video-review-fragment.mp4" type="video/mp4"><source src="https://github.com/SergeyKozyrev58/pdd/releases/download/v1.0/video-review-fragment.mp4" type="video/mp4">Ваш браузер не поддерживает воспроизведение видео.</video></div></div>
       </div></div>
     </section>
 
@@ -259,7 +261,7 @@
         <p class="eyebrow">Индивидуальная подготовка</p><h2>Подготовку можно начать с любого уровня</h2>
         <p class="lead">Неудачная попытка, пробелы в знаниях или тревога — это отправная точка. Спокойно разберём ситуацию и выстроим понятный путь к экзамену.</p>
         <div class="contact-buttons" aria-label="Контактные данные преподавателя">
-          <a class="contact-button" href="https://t.me/pddsensey" target="_blank" rel="noopener noreferrer" data-goal="telegram_click"><span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 3 9.7 14.3M21 3l-7.2 18-4.1-6.7L3 10.2 21 3Z"/></svg></span><span class="contact-copy"><strong>Telegram</strong><span>@pddsensey</span></span></a>
+          <a class="contact-button" href="https://t.me/pddsensey?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%AF%20%D1%81%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0%20%D1%80%D0%B5%D0%BF%D0%B5%D1%82%D0%B8%D1%82%D0%BE%D1%80%D0%BF%D0%B4%D0%B4.%D1%80%D1%84.%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BE%20%D0%BF%D0%BE%D0%B4%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%BA%D0%B5%20%D0%BA%20%D1%82%D0%B5%D0%BE%D1%80%D0%B8%D0%B8%20%D0%9F%D0%94%D0%94." target="_blank" rel="noopener noreferrer" data-goal="telegram_click"><span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 3 9.7 14.3M21 3l-7.2 18-4.1-6.7L3 10.2 21 3Z"/></svg></span><span class="contact-copy"><strong>Telegram</strong><span>@pddsensey</span></span></a>
           <a class="contact-button" href="tel:+79991940480" data-goal="phone_click"><span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7.2 3.5 4.6 4.8c-1.2.6-1.7 2-1.2 3.2 2.2 5.6 6.7 10.1 12.3 12.3 1.2.5 2.6 0 3.2-1.2l1.3-2.6-4.3-2-1.4 2.1c-3-1.4-5.5-3.9-6.9-6.9l2.1-1.4-2.5-4.8Z"/></svg></span><span class="contact-copy"><strong>Телефон</strong><span>8 999 194-04-80</span></span></a>
           <a class="contact-button" href="https://m.vk.ru/pddsensey" target="_blank" rel="noopener noreferrer" data-goal="vk_click"><span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 7.5c1 5.7 4.2 9 9 9h.8v-3c1.8.2 3.2 1.5 4.4 3h2.3c-1-2.2-2.5-3.8-4.1-4.6 1.5-.9 2.8-2.5 3.6-4.4h-2.2c-1 2-2.3 3.5-4 3.8V7.5h-2.1v6.6C8.9 13.4 7.2 11 6.3 7.5H4Z"/></svg></span><span class="contact-copy"><strong>ВКонтакте</strong><span>@pddsensey</span></span></a>
         </div>
